@@ -1,31 +1,23 @@
 const btnEl = document.getElementById("btn")
-const jokeEL = document.getElementById("joke")
+const jokeEL = document.getElementById("olavo")
 
 
-const apiKey = ""
 
-const options = {
-  method: "GET",
-  headers: {
-    "X-Api-key": apiKey,
-  }
-}
-
-const apiURL = "https://api.api-ninjas.com/v1/dadjokes?limit="
+const apiURL = "olavo.json"
 
 async function getJoke() {
   try {
     jokeEL.innerText = "Atualizando.."
     btnEl.disabled = true
     btnEl.innerText = "Carregando.."
-    const response = await fetch(apiURL, options)
+    const response = await fetch(apiURL)
     const data = await response.json()
   
     
     btnEl.disabled = false
     btnEl.innerText = "Frase do Olavo"
 
-    jokeEL.innerText = data[0].joke;
+    jokeEL.innerText = data[Math.floor(Math.random() * data.length)].olavo;
   } catch (error) {
    jokeEL.innerText = "Aconteceu um erro, tente novamente mais tarde!";
    btnEl.disabled = false
