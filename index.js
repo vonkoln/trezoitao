@@ -1,13 +1,13 @@
 const btnEl = document.getElementById("btn")
-const jokeEL = document.getElementById("olavo")
+const olavoEL = document.getElementById("olavo")
 
 
 
 const apiURL = "olavo.json"
 
-async function getJoke() {
+async function getOlavo() {
   try {
-    jokeEL.innerText = "Atualizando.."
+    olavoEL.innerText = "Atualizando.."
     btnEl.disabled = true
     btnEl.innerText = "Carregando.."
     const response = await fetch(apiURL)
@@ -17,9 +17,9 @@ async function getJoke() {
     btnEl.disabled = false
     btnEl.innerText = "Frase do Olavo"
 
-    jokeEL.innerText = data[Math.floor(Math.random() * data.length)].olavo;
+    olavoEL.innerText = data[Math.floor(Math.random() * data.length)].olavo;
   } catch (error) {
-   jokeEL.innerText = "Aconteceu um erro, tente novamente mais tarde!";
+   olavoEL.innerText = "Aconteceu um erro, tente novamente mais tarde!";
    btnEl.disabled = false
    btnEl.innerText = "Frase do Olavo"
    console.log(error)
@@ -28,4 +28,4 @@ async function getJoke() {
  
 }
 
-btnEl.addEventListener("click", getJoke)
+btnEl.addEventListener("click", getOlavo)

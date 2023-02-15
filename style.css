@@ -1,9 +1,9 @@
 body
 {
   margin: 0;
-  background: linear-gradient(to left bottom, lightblue, lightpink, lightblue);
+  padding: 0;
+  background: linear-gradient(to left bottom, #ffa8a8, #ff9e44,#ff9393);
   min-height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-family: monospace;
@@ -17,6 +17,7 @@ body
   width: 85%;
   text-align: center;
   color: darkblue;
+  margin: 20% auto;
 }
 .heading
 {
@@ -25,6 +26,7 @@ body
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-shadow: 5px 5px 2px rgba(0, 0, 0, .3);
   letter-spacing: 2px;
+  user-select: none;
 }
 .olavo
 {
@@ -49,4 +51,20 @@ body
   background-color: rgba(255, 255, 255, .5);
   box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
   transition: all 300ms ease;
+}
+.info
+{
+  
+  justify-content: center;
+  align-items: center;
+
+ 
+  text-align: center;
+  color: #000;
+
+}
+footer
+{
+  justify-content: center;
+  text-align: center;
 }
