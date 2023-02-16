@@ -12,33 +12,15 @@ async function getOlavo()
     const response = await fetch(apiURL)
     const data = await response.json()        
     btnEl.disabled = false
-    btnEl.innerText = "Frase do Olavo"
+    btnEl.innerText = "Frase"
     olavoEL.innerText = data[Math.floor(Math.random() * data.length)].olavo;
   } catch (error)
   {
    olavoEL.innerText = "Aconteceu um erro, tente novamente mais tarde!";
    btnEl.disabled = false
-   btnEl.innerText = "Frase do Olavo"
+   btnEl.innerText = "Frase"
    console.log(error)
   } 
 }
 btnEl.addEventListener("click", getOlavo)
 
-// var size = Object.keys(apiURL).length;
-
-// console.log(size); 
-
-
- 
- var qtd = 0;
- var key;
- 
- for(key in apiURL) {
- 
-     if(apiURL.hasOwnProperty(key)) {
-         qtd++;
-   }
- 
- }
- 
- console.log(qtd); // 2
