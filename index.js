@@ -36,7 +36,7 @@ async function getOlavo()
 btnEl.addEventListener("click", getOlavo)
 
 
-// olavoEL.addEventListener('click', () => {
+// btn.addEventListener('click', () => {
 //   if (data.length === apiURL.length) {
 //     // Se todas as frases já foram usadas, reiniciar a lista de frases usadas
 //     data = [];
