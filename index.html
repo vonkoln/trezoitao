@@ -1,110 +1,110 @@
 <!doctype html>
-<html ⚡ lang="pt-br">
+<html ⚡ lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <title>Gerador de frases do Renato Trezoitão</title>
+  <title>Frases de Renato Trezoitão</title>
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <meta name="description" content="Gerador de frases icônicas de Renato Trezoitão, com reflexões sobre vida, economia e Bitcoin.">
+  <meta name="description" content="Gerador de frases icônicas de Renato Trezoitão.">
+  <link rel="canonical" href="https://frasestrezoitao.netlify.app">
 
-  <meta property="og:image" content="https://raw.githubusercontent.com/vonkoln/fotos/main/index.jpg">
-  <meta property="og:image:type" content="image/jpg">
-  <meta property="og:image:width" content="1280">
-  <meta property="og:image:height" content="720">
+  <style amp-boilerplate>body{visibility:hidden}</style>
+  <noscript><style amp-boilerplate>body{visibility:visible}</style></noscript>
 
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
-  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+  <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+  <script async custom-element="amp-state" src="https://cdn.ampproject.org/v0/amp-state-0.1.js"></script>
+  <script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
 
-  <link rel="canonical" href="https://seusite.com/">
   <style amp-custom>
-    body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to left bottom, #ffa8a8, #ff9e44, #ff9393);
-      font-family: monospace;
-      text-align: center;
-    }
-    .container {
-      background-color: rgba(255, 255, 255, .3);
-      padding: 20px;
-      box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
-      border-radius: 15px;
-      width: 85%;
-      margin: 30px auto;
-      color: darkblue;
-    }
-    .heading {
-      font-size: 35px;
-      font-weight: 200;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-      text-shadow: 5px 5px 2px rgba(0, 0, 0, .3);
-      letter-spacing: 2px;
-    }
-    .olavo {
-      font-size: 25px;
-      margin: 40px 0;
-    }
-    .btn {
-      display: inline-block;
-      font-size: 18px;
-      font-weight: 700;
-      border-radius: 5px;
-      cursor: pointer;
-      padding: 10px;
-      background-color: rgba(255, 255, 255, .3);
-      border: 2px solid rgba(255, 255, 255, .6);
-      text-transform: uppercase;
-      width: 300px;
-      color: darkblue;
-      text-decoration: none;
-    }
-    .btn:hover {
-      background-color: rgba(255, 255, 255, .5);
-      box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
-      transition: all 300ms ease;
-    }
-    .sobre {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: rgba(255, 255, 255, .2);
-      border-radius: 10px;
-      font-size: 16px;
-      line-height: 1.5;
-      color: #000;
-    }
-    footer {
-      margin-top: 30px;
-      color: #000;
-      font-size: 14px;
-    }
+    /* CSS baseado na Versão 3 - Core Web Vitals otimizado */
+    body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;background:#eceff1;display:flex;flex-direction:column;align-items:center;padding:15px}
+    .container{background:#fff;border-radius:20px;padding:25px;box-shadow:0 6px 20px rgba(0,0,0,.1);width:100%;max-width:650px;text-align:center}
+    .heading{font-size:clamp(1.6rem,4vw,2.4rem);color:#37474f;margin-top:12px;font-weight:600}
+    .olavo{font-size:clamp(1.1rem,3vw,1.5rem);color:#263238;margin:18px 0;line-height:1.5;min-height:3.5rem} /* min-height evita layout shift */
+    .btn{background:#ff5722;color:#fff;border-radius:50px;padding:12px 26px;text-decoration:none;font-weight:700;box-shadow:0 4px 12px rgba(255,87,34,.4);transition:box-shadow .25s,transform .18s;cursor:pointer}
+    .btn:hover{box-shadow:0 6px 16px rgba(255,87,34,.6);transform:translateY(-2px)}
+    .sobre{margin-top:25px;background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.05);max-width:650px;font-size:.95rem;color:#455a64;line-height:1.6}
+    footer{margin-top:35px;color:#607d8b;font-size:.85rem}
+    /* espaço reservado para anúncios com tamanho fixo (ajuda LCP/CLS) */
+    amp-ad { display:block; margin: 12px 0; }
   </style>
 </head>
 <body>
 
-  <div class="container">
-    <amp-list id="myList" width="auto" height="100" layout="fixed-height" src="olavo.json" single-item reset-on-refresh>
-      <template type="amp-mustache">
-        <p class="olavo">{{olavo}}</p>
-      </template>
-    </amp-list>
-    <h1 class="heading">- Renato Trezoitão</h1>
-    <a role="button" class="btn" on="tap:myList.refresh">Minha honra!</a>
-  </div>
+  <!-- Anúncio AMP (substitua ids) -->
+  <amp-ad width="100vw" height="320"
+    type="adsense"
+    data-ad-client="ca-pub-SEU_ID"
+    data-ad-slot="SEU_SLOT_ID"
+    data-auto-format="rspv"
+    data-full-width>
+    <div overflow></div>
+  </amp-ad>
+
+  <!-- Frases (estado local) -->
+  <amp-state id="frases">
+    <script type="application/json">
+    {
+      "lista": [
+        {"texto":"Quem compra porque tá subindo, vende porque tá caindo."},
+        {"texto":"Você é uma média de quem você anda.Se você andar com puta vai achar ser puta normal, se você andar com vagabundo vai achar ser vagabundo normal."},
+        {"texto":"Grande parte das pessoas que ganham na loteria terminam piores do que se não tivessem ganhado. Ter bitcoin é ganhar na loteria aos poucos."},
+        {"texto":"O lago de fogo é público gratuito e de qualidade."},
+        {"texto":"Os únicos que podem salvar sua família, é você, seu pai e seu filho, não contem com mais ninguém. O que não for tirado será perdido."},
+        {"texto":"Alguns só aprendem pela dor anal."},
+        {"texto":"Você vai dar testa em Nero?"},
+        {"texto":"Bitcoinheiros brasileiros tem muita sorte. Quando compram satoshis também estão vendendo Real, essa shitcoin temática com animais exóticos lastreada em honestidade de político."},
+        {"texto":"O diabo ofereceu os governos a Jesus, no deserto, os principados, se o diabo ofereceu, é de quem?"},
+        {"texto":"As maiores mentiras não são para os outros, são para você mesmo."},
+        {"texto":"O abuso de qualquer poder leva à perda de poder."},
+        {"texto":"Se acabar a energia elétrica, em 24 horas acaba o feminismo e em 48 horas volta a escravidão voluntária."},
+        {"texto":"Quanto mais estímulo você tiver, mais estímulo você vai querer."},
+        {"texto":"Quem busca ser feliz serve ao diabo, quem serve a Jesus busca ser bom."},
+        {"texto":"Você pagaria para ser sodomizado?"},
+        {"texto":"Bitcoin não tem topo, porque as moedas de governo não têm fundo."},
+        {"texto":"A paciência é a maior aliada do investidor."},
+        {"texto":"Não é sobre prever o mercado, é sobre estar preparado."}
+      ]
+    }
+    </script>
+  </amp-state>
+
+  <!-- Estado inicial (objeto com propriedade 'texto') -->
+  <amp-state id="fraseAtual">
+    <script type="application/json">
+      {"texto":"Quem compra porque tá subindo, vende porque tá caindo."}
+    </script>
+  </amp-state>
+
+  <main class="container">
+    <!-- vinculamos o texto ao estado: [text]="fraseAtual.texto" -->
+    <p class="olavo" [text]="fraseAtual.texto">Quem compra porque tá subindo, vende porque tá caindo.</p>
+    <h1 class="heading">Renato Trezoitão</h1>
+
+    <!-- CORREÇÃO: usar floor() e random() (sem Math.) -->
+    <button class="btn"
+      on="tap:AMP.setState({fraseAtual: frases.lista[floor(random() * frases.lista.length)]})">
+      Minha honra!
+    </button>
+  </main>
+
+  <!-- Segundo anúncio (entre blocos) -->
+  <amp-ad width="100vw" height="320"
+    type="adsense"
+    data-ad-client="ca-pub-SEU_ID"
+    data-ad-slot="SEU_SLOT_ID2"
+    data-auto-format="rspv"
+    data-full-width>
+    <div overflow></div>
+  </amp-ad>
 
   <section class="sobre">
     <h2>Sobre o Gerador</h2>
-    <p>
-      Este site exibe frases marcantes de Renato Trezoitão, abordando economia, filosofia e comportamento humano.
-      Cada clique traz uma nova frase para inspirar, provocar ou divertir. Nosso objetivo é preservar e compartilhar
-      pensamentos que mexem com a mente e desafiam o senso comum.
-    </p>
+    <p>Este site exibe frases icônicas de Renato Trezoitão, abordando temas como economia, filosofia e Bitcoin.</p>
   </section>
 
   <footer>
-    <p>☕ Pix: brunovonkoln@gmail.com | ⚡ Lightning: von@bipa.app</p>
-    <p>&copy; 2023 Bruno Chapecó</p>
+    <p>© 2025 Bruno Chapecó</p>
   </footer>
-
 </body>
 </html>
