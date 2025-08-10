@@ -1,36 +1,110 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html ⚡ lang="pt-br">
 <head>
-    <meta property="og:image" content="https://raw.githubusercontent.com/vonkoln/fotos/main/index.jpg">
-    <meta property="og:image:type" content="image/jpg">
-    <meta property="og:image:width" content="1280">
-    <meta property="og:image:height" content="720">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
   <title>Gerador de frases do Renato Trezoitão</title>
-  <link rel="stylesheet" href="style.css">
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0610793785321752"
-     crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <meta name="description" content="Gerador de frases icônicas de Renato Trezoitão, com reflexões sobre vida, economia e Bitcoin.">
+
+  <meta property="og:image" content="https://raw.githubusercontent.com/vonkoln/fotos/main/index.jpg">
+  <meta property="og:image:type" content="image/jpg">
+  <meta property="og:image:width" content="1280">
+  <meta property="og:image:height" content="720">
+
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+  <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+
+  <link rel="canonical" href="https://seusite.com/">
+  <style amp-custom>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to left bottom, #ffa8a8, #ff9e44, #ff9393);
+      font-family: monospace;
+      text-align: center;
+    }
+    .container {
+      background-color: rgba(255, 255, 255, .3);
+      padding: 20px;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
+      border-radius: 15px;
+      width: 85%;
+      margin: 30px auto;
+      color: darkblue;
+    }
+    .heading {
+      font-size: 35px;
+      font-weight: 200;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      text-shadow: 5px 5px 2px rgba(0, 0, 0, .3);
+      letter-spacing: 2px;
+    }
+    .olavo {
+      font-size: 25px;
+      margin: 40px 0;
+    }
+    .btn {
+      display: inline-block;
+      font-size: 18px;
+      font-weight: 700;
+      border-radius: 5px;
+      cursor: pointer;
+      padding: 10px;
+      background-color: rgba(255, 255, 255, .3);
+      border: 2px solid rgba(255, 255, 255, .6);
+      text-transform: uppercase;
+      width: 300px;
+      color: darkblue;
+      text-decoration: none;
+    }
+    .btn:hover {
+      background-color: rgba(255, 255, 255, .5);
+      box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+      transition: all 300ms ease;
+    }
+    .sobre {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, .2);
+      border-radius: 10px;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #000;
+    }
+    footer {
+      margin-top: 30px;
+      color: #000;
+      font-size: 14px;
+    }
+  </style>
 </head>
 <body>
+
   <div class="container">
-    <p class="olavo" id="olavo">Gerador de frases</p>    
-    <h1 class="heading"> - Renato Trezoitão</h1>
-    <button class="btn" id="btn">Minha honra!</button>
+    <amp-list id="myList" width="auto" height="100" layout="fixed-height" src="olavo.json" single-item reset-on-refresh>
+      <template type="amp-mustache">
+        <p class="olavo">{{olavo}}</p>
+      </template>
+    </amp-list>
+    <h1 class="heading">- Renato Trezoitão</h1>
+    <a role="button" class="btn" on="tap:myList.refresh">Minha honra!</a>
   </div>
-  <div class="info">
-    <p>Me pague um café: ☕ Pix brunovonkoln@gmail.com</p>
-    <p> Endereço Lightning: von@bipa.app   </p>
-    <address class="info"><a href="https://github.com/vonkoln" title="Meu portfólio." style="text-decoration: none"> &spades; <strong>Bruno Chapecó</strong></a></address>
- </div>
-  <footer>
-    <p>Copyright &copy; 2023
-<!-- Inicia codigo Contador -->
-<div align="center"><a title='Contador de Visitas do MegaContador' href='https://megacontador.com.br/' ><img src='https://megacontador.com.br/img-3X0upATMINDbbvtH-5.gif' border='0' alt='Contador de visitas'></a></div>
-<!-- Fim do codigo Contador -->
+
+  <section class="sobre">
+    <h2>Sobre o Gerador</h2>
+    <p>
+      Este site exibe frases marcantes de Renato Trezoitão, abordando economia, filosofia e comportamento humano.
+      Cada clique traz uma nova frase para inspirar, provocar ou divertir. Nosso objetivo é preservar e compartilhar
+      pensamentos que mexem com a mente e desafiam o senso comum.
     </p>
+  </section>
+
+  <footer>
+    <p>☕ Pix: brunovonkoln@gmail.com | ⚡ Lightning: von@bipa.app</p>
+    <p>&copy; 2023 Bruno Chapecó</p>
   </footer>
-  <script src="index.js"></script>
+
 </body>
 </html>
